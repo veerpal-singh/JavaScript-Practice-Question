@@ -120,7 +120,7 @@ let doubleArray = [1,2,3]
 let newDoubleArray = doubleArray.map(function(vlaues){
     return vlaues*2
 })
-console.log(newDoubleArray);
+// console.log(newDoubleArray);
 
 
 // 11: Convert an array of string into a single comma-separated string.
