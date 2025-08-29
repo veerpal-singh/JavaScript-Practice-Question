@@ -86,3 +86,48 @@ let result = arrofobj.filter(function(element){
 // console.log(result);
 
 
+/* 8: Given an array of strng. 
+// return a new array where all string are in uppercase*/
+
+let upperArray = ["radh","krishn","ram","sita"]
+
+let newUpperArray = upperArray.map(function(value){
+    return value.toUpperCase(upperArray)   
+    
+})
+// console.log(newUpperArray);
+
+
+// 9: Check if an object is empty or not
+
+let emptyObj = {}
+
+let keysArray = Object.keys(emptyObj)
+
+let isEmptyArray = keysArray.length < 1;
+
+if(isEmptyArray){
+    console.log("object is empty");    
+}else{
+    console.log("object is not empty");    
+}
+
+
+// 10: Create an array of numbers and double each value using map().
+
+let doubleArray = [1,2,3]
+
+let newDoubleArray = doubleArray.map(function(vlaues){
+    return vlaues*2
+})
+console.log(newDoubleArray);
+
+
+// 11: Convert an array of string into a single comma-separated string.
+
+
+
+
+
+
+
