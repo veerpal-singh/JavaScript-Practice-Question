@@ -125,9 +125,70 @@ let newDoubleArray = doubleArray.map(function(vlaues){
 
 // 11: Convert an array of string into a single comma-separated string.
 
+let separatedArray = [1,"mkl","2",5]
+
+separatedArray.join()
 
 
+// 12: Write a function to flatten a nested array (one level deep)
+// (e.g.. [1,[2,3],4] => [1,2,3,4])
+
+let flattenArray = [1,2,3,4,[5,6,7],8,9];
+
+flattenArray.splice(4,1,...flattenArray[4]);
+// console.log(flattenArray);
+
+// second solution
+
+let arrayFlatten = flattenArray.flat(1)
+// console.log(arrayFlatten);
 
 
+// 13: Write a function that checks if all elements in 
+// an array are numbers or not.
+
+let checkArray = [1,2,3,4,5]
+
+function checkNumberArray(localArray){
+    let isNumber = true;
+    arr.forEach(function(element){
+        if(typeof element != "number"){
+            isNumber = false
+        }
+    })
+    return isNumber
+}
+// console.log(checkNumberArray());
 
 
+// 14: Build a simple isPrime() function to check if a number is prime
+
+function isPrime(num){
+
+    if(num ===0 || num === 1){
+        return false;
+    }
+
+    for(let i = 2; i < Math.sqrt(num); i++){
+        if(num % i === 0){
+            return false
+        }
+    }
+    return true;
+}
+
+// console.log(isPrime(1));
+
+
+// 15: Create a function that removes duplicate values from
+// an array.
+
+function removeDuplicate(arr){
+    let resultanArr = arr.filter(function(element,index){
+        return arr.indexOf(element) === index;
+    })
+    return resultanArr;
+}
+
+let setArray = removeDuplicate([1,2,2,5,2,3,4,1])
+console.log(setArray);
